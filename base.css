@@ -1,38 +1,139 @@
-html, body {
-    margin: 0;
-}
-body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+:root{
+    --branco: #ffffff;
+    --azul:#94d0e4cc;
+    --preto:#141414;
 }
 
-.wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: var(--preto);
 }
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
+
+body{
+    background-color: var(--azul);
 }
-.menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+
+h1{
+    border-bottom: 1px solid var(--branco);
+    margin-bottom: 10px;
+    color: var(--branco);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+
+nav a{
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 5px solid var(--branco);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  
 }
-.content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+
+nav :hover{
+    color: var(--azul);
+    background-color: var(--branco);
+    -webkit-box-shadow: inset -1px 3px 8px 5px var(--branco), 2px 5px 16px 0px var(--branco) 0px 0px 9px 7px rgb(252, 243, 243); 
+box-shadow: inset -1px 3px 8px 5px var(--branco), 2px 5px 16px 0px var(--branco), 0px 0px 9px 7px rgb(255, 255, 255);
 }
-.footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+
+
+.menu{
+    background-color: var(--azul);
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+img{
+    height: 500px;
+    width: 100%;
+}
+
+article{
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+article h2{
+    margin-left: 50px;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 5px solid var(--azul);
+    color: var(--preto);
+}
+
+article p{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 60%;
+    border-right: 5px solid var(--azul);
+}
+
+article li{
+    text-align: right;
+    margin-right: 4%;
+    padding: 3px;
+}
+
+article .lista1{
+    margin-right: 45%;
+    margin-left: 45%;
+    border-right: 5px solid var(--azul);
+}
+
+article .lista2{
+    margin-right: 30%;
+    margin-left: 60%;
+    border-right: 5px solid var(--azul);
+}
+
+h2{
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: var(--preto);
+    border-bottom: 5px solid var(--branco);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+iframe{
+    -webkit-box-shadow: inset -1px 3px 8px 5px var(--branco), 2px 5px 16px 0px var(--branco) 0px 0px 9px 7px rgb(252, 243, 243); 
+    box-shadow: inset -1px 3px 8px 5px var(--branco), 2px 5px 16px 0px var(--branco), 0px 0px 9px 7px rgb(255, 255, 255);
+margin-left: 30%;
+background-color: var(--branco);
+margin-bottom: 15px;
+}
+
+footer{
+    background-color: var(--branco);
+    width: 100%;
+    height: 150px;
+    color: var(--azul);
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+footer h3{
+    color: black;
+    font-style: italic;
+}
+
+footer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .txt{
+    margin-bottom: 70%;
 }
